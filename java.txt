@@ -1,0 +1,308 @@
+// Online Java Compiler
+
+// Use this editor to write, compile and run your Java code online
+
+import java.util.*;
+
+class HelloWorld {
+
+  public static void main(String[] args) {
+
+    ArrayList<String> arr=new ArrayList<String>();
+
+    ArrayList<Integer> crr=new ArrayList<Integer>();
+
+    int[] a={4,5,-2,8,99,67};
+
+    int len=a.length;
+
+    int k=0;
+
+    for(int i=97;i<97+len;i++)
+
+    {
+
+      crr.add(a[k]);
+
+      char t=(char)i;
+
+      String e=String.valueOf(t);
+
+      arr.add(e);
+
+      k++;
+
+    }
+
+    ArrayList<String> mrr=new ArrayList<String>();
+
+     ArrayList<Integer> drr=new ArrayList<Integer>(crr);
+
+     Collections.sort(drr);
+
+     for(int i=0;i<drr.size();i++)
+
+     {
+
+       int y=crr.get(i);
+
+       int n=drr.indexOf(y);
+
+       mrr.add(arr.get(n));
+
+       System.out.println(y);
+
+       System.out.println(n);
+
+     }
+
+    System.out.println(arr);
+
+    System.out.println(crr);
+
+    System.out.println(mrr);
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// Online Java Compiler
+
+// Use this editor to write, compile and run your Java code online
+
+import java.util.*;
+
+class HelloWorld {
+
+  public static void main(String[] args) {
+
+    // ArrayList<String> arr=new ArrayList<String>();
+
+    ArrayList<Integer> crr=new ArrayList<Integer>();
+
+    int[] a={10,41,18,50,43,31,29,25,59,96,67};
+
+     
+
+    int sum=0;
+
+    for(int i=0;i<a.length;i++)
+
+    {
+
+      int mn=a[i];
+
+      //System.out.println(mn);
+
+       ArrayList<Integer> hrr=new ArrayList<Integer>();
+
+      for(int j=1;j<=mn;j++)
+
+      {
+
+        if(mn%j==0)
+
+        {
+
+          hrr.add(j);
+
+        }
+
+      }
+
+      //System.out.println(hrr);
+
+      if(hrr.size()<=2)
+
+      {
+
+        crr.add(a[i]);
+
+        sum+=a[i];
+
+      }
+
+    }
+
+    int rt=Collections.min(crr);
+
+    System.out.println(sum-rt);
+
+    
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+// Online Java Compiler
+
+// Use this editor to write, compile and run your Java code online
+
+import java.util.*;
+
+class HelloWorld {
+
+  public static void main(String[] args) {
+
+    ArrayList<String> arr=new ArrayList<String>();
+
+    ArrayList<Integer> crr=new ArrayList<Integer>();
+
+    int[] a={12};
+
+    for(int i=0;i<a.length;i++)
+
+    {
+
+      String m="";
+
+      int e=a[i];
+
+      int gh=e;
+
+      //String m="";
+
+      String an=String.valueOf(e);
+
+      int len=an.length();
+
+      if(len==6)
+
+      {
+
+        m+="C";
+
+      }
+
+      else
+
+      {
+
+        m+="W";
+
+      }
+
+      if(e==0)
+
+      {
+
+        m+="Z";
+
+      }
+
+      if(e==1)
+
+      {
+
+        m+="Z";
+
+      }
+
+      int count=0;
+
+      for(int j=1;j<=e;j++)
+
+      {
+
+        if(e%j==0)
+
+        {
+
+          count++;
+
+        }
+
+      }
+
+      if(count<=2)
+
+      {
+
+        m+="P";
+
+      }
+
+      else
+
+      {
+
+        m+="N";
+
+      }
+
+      int er = e;
+
+        String bn = String.valueOf(er);
+
+        if (bn.length() > 1) {
+
+          while (er > 9) {
+
+            int mn = 0;
+
+            while (er > 0) {
+
+              mn += er % 10;
+
+              er /= 10;
+
+            }
+
+            er = mn;
+
+          }
+
+          m += er;
+
+        } else {
+
+          m += String.valueOf(er);
+
+        }
+
+      // String qw=String.valueOf(mn);
+
+     // m+=String.valueOf(er);
+
+      if(e%2==0)
+
+      {
+
+        int yu=e/2;
+
+        m+=String.valueOf(yu);
+
+      }
+
+      arr.add(m);
+
+    }
+
+    System.out.println(arr);
+
+  }
+
+}
+
+
+
+
+
